@@ -22,6 +22,7 @@ const App = () => {
     // console.log('retrievedDetails undefined',retrievedDetails)
 // return {userId:'',productId:'',token:'',exp:''}
     return JSON.parse(retrievedDetails)
+    // console.log('retrivedDetails',retrievedDetails)
    }
   })
 

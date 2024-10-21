@@ -12,13 +12,38 @@
   border:border-box;
 }
 
+body{
+  overflow: auto;
+}
+
+body::-webkit-scrollbar { /* WebKit browsers (Chrome, Safari, etc.) */
+  display: none;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-top:8px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: black;
+}
+
 .scroll::-webkit-scrollbar { /* WebKit browsers (Chrome, Safari, etc.) */
     display: none;
   }
 
 .price-container div{
    font-size: 20px;
-  color:#374151;
+  color:black;
   display:flex;
   gap:10px;
 }
@@ -33,7 +58,9 @@
   width:auto;
   display:flex;
   align-items: center;
+  margin-left:10px;
 }
+
 
 .error-message{
   color:red
