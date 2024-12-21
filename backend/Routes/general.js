@@ -23,7 +23,7 @@ router.post('/otpSending', async (req, res) => {
       // OTP Sending :
 
       // time = Date.now() + 1000 * 60 * 10 ;
-      time = Date.now() + 1000 * 30 ;
+      time = Date.now() + 1000 * 60 * 10 ;
       console.log('OTP : ',OTP)
       const transporter = nodemailer.createTransport({
          service: 'gmail',
